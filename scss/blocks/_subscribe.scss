@@ -1,0 +1,38 @@
+.subscribe {
+    padding: 35px 0 50px;
+}
+
+.subscribe__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__title {
+    margin-bottom: 60px;
+    max-width: 494px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.subscribe-form {
+    width: 800px;
+    padding: 12px 15px 12px 46px;
+    border-radius: 35px;
+    background-color: $white;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 45px;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+
+    &::placeholder {
+        color: rgba($secondary, 0.5);
+    }
+}

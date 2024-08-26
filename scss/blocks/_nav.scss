@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 80px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    & a {
+        position: relative;
+
+        &.active::after,
+        &:hover::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            right: 10px;
+            bottom: -6px;
+
+            display: block;
+            height: 4px;
+            background-color: $color-border-nav;
+            border-radius: 100px;
+        }
+    }
+}
+
+.nav__login {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav__toggle {
+    display: none;
+}

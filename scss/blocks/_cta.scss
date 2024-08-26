@@ -1,0 +1,58 @@
+.cta {
+    padding: 100px 0;
+}
+
+.cta__plate {
+    position: relative;
+
+    display: flex;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 580px;
+    padding: 40px 15px;
+
+    border-radius: 60px;
+    background-color: $white;
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        width: 63px;
+        height: 83px;
+    }
+
+    &::before {
+        left: 74px;
+        bottom: 56px;
+        background-image: url("./../img/cta/cta-el-02.svg");
+    }
+
+    &::after {
+        right: 80px;
+        top: 74px;
+        background-image: url("./../img/cta/cta-el-01.svg");
+    }
+}
+
+.cta__title {
+    z-index: 1;
+    margin-bottom: 30px;
+    width: 519px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.cta__text {
+    z-index: 1;
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba($secondary, 0.5);
+    text-align: center;
+}

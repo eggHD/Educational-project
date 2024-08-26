@@ -1,0 +1,39 @@
+.review {
+    max-width: 490px;
+}
+
+.review__client {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+
+    &-avatar {
+        overflow: hidden;
+        width: 134px;
+        height: 134px;
+        border-radius: 50%;
+        background-color: #ff794e;
+    }
+}
+
+.review__client-desc {
+    &-name {
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    &-country {
+        font-size: 25px;
+        font-weight: 400;
+        color: rgba($secondary, 0.5);
+    }
+}
+
+.review__text {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba($secondary, 0.5);
+}

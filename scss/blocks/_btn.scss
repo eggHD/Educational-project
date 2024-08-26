@@ -1,0 +1,57 @@
+.btn {
+    display: inline-block;
+    color: $white;
+    background: $gradient-btn;
+
+    &:hover {
+        color: rgba($secondary, 0.5);
+        transition: color 0.2s ease-in;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    &--login {
+        padding: 13px 44px;
+        border-radius: 100px;
+
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    &--header {
+        padding: 27px 48px;
+        border-radius: 27px;
+
+        font-size: 25px;
+        font-weight: 600;
+        color: $white-btn;
+    }
+
+    &--destinations {
+        padding: 25px 55px;
+        border-radius: 27px;
+
+        font-size: 20px;
+        font-weight: 600;
+        color: $white-btn;
+    }
+
+    &--cta {
+        padding: 25px 45px;
+        border-radius: 27px;
+
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &--subscribe {
+        padding: 34px 86px;
+        border-radius: 35px;
+
+        font-size: 25px;
+        font-weight: 600;
+    }
+}

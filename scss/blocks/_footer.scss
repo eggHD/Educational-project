@@ -1,0 +1,43 @@
+.footer {
+    padding: 56px 0 74px;
+
+    & a {
+        color: rgba($secondary, 0.5);
+    }
+}
+
+.logo {
+    &--footer {
+        color: $accent;
+
+        &:hover {
+            color: rgba($secondary, 0.5);
+        }
+    }
+}
+
+.nav__list {
+    &--footer {
+        color: inherit;
+
+        & a.active::after,
+        & a:hover:after {
+            display: none;
+        }
+
+        & a.active,
+        & a:hover {
+            color: $accent;
+        }
+    }
+}
+
+.nav__login {
+    &--footer {
+        column-gap: 66px;
+
+        & .btn--login {
+            color: $white;
+        }
+    }
+}
